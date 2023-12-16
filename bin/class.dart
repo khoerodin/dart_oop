@@ -16,6 +16,12 @@ class Person {
   }
 }
 
+extension SayGoodByeOnPerson on Person {
+  void sayGoodBy(String paramName) {
+    print('Good by $paramName from $name');
+  }
+}
+
 void main() {
   var person1 = Person();
   var person2 = Person();
@@ -30,4 +36,6 @@ void main() {
   person1.hello();
 
   print(person2);
+
+  person1.sayGoodBy('Bagas');
 }

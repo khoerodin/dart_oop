@@ -2,6 +2,18 @@ class Person {
   String name = 'Guest';
   String? address;
   final String country = 'Indonesia';
+
+  void sayHello(paramName) {
+    print('Hello $paramName, my name is $name');
+  }
+
+  void hello() {
+    print('My name is $name');
+  }
+
+  String getName() {
+    return 'My name is $name';
+  }
 }
 
 void main() {
@@ -13,6 +25,9 @@ void main() {
   print(person1.name);
   print(person1.address);
   print(person1.country);
+
+  person1.sayHello('Budi');
+  person1.hello();
 
   print(person2);
 }

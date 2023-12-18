@@ -7,6 +7,7 @@ class Manager {
 }
 
 class VicePresident extends Manager {
+  @override
   void sayHello(String name) {
     print('Hello $name!, I am a Vice President, my name is ${this.name}');
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_cast
+
 class Employee {
   String name;
   Employee(this.name);

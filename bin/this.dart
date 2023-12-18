@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_initializing_formals
+
 class Person {
   String name = 'Guest';
   String? address;

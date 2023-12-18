@@ -8,6 +8,7 @@ class Person {
 
 class OtherPerson extends Person {
   @override
+  // ignore: overridden_fields
   String name = 'Imam';
 }
 

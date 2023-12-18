@@ -8,15 +8,27 @@ class Car {
   }
 }
 
-// semua yang ada di Car harus dideklarasikan ulang di Avanza
-class Avanza implements Car {
+abstract class HasBrand {
+  String getBrand();
+}
+
+// semua yang ada di Car dan HasBrand harus dideklarasikan ulang di Avanza
+class Avanza implements Car, HasBrand {
+  @override
   String name = 'Avanza';
 
+  @override
   void drive() {
     print('Avanza is running');
   }
 
+  @override
   int getTier() {
     return 4;
+  }
+
+  @override
+  String getBrand() {
+    return 'Toyota';
   }
 }

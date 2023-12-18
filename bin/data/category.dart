@@ -4,6 +4,7 @@ class Category {
 
   Category(this.id, this.name);
 
+  @override
   bool operator ==(Object other) {
     if (other is Category) {
       if (id != other.id) {
@@ -16,5 +17,13 @@ class Category {
     } else {
       return false;
     }
+  }
+
+  @override
+  int get hashCode {
+    var result = id.hashCode;
+    result += name.hashCode;
+
+    return result;
   }
 }

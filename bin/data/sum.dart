@@ -8,3 +8,6 @@ class Sum {
     return first * second;
   }
 }
+
+typedef Jumlah = Sum;
+typedef Total = Sum;
